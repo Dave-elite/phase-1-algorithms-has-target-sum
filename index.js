@@ -1,6 +1,20 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+
+// first thing is to iterate throgh the array to find the sum
+
+for(let i= 0; i < array.length; i++){
+
+  for(let j=i+1; j < array.length; j++){
+    if(array[i] + array[j] === target){
+      return true
+    }
+  }
 }
+return false
+
+}
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -8,6 +22,11 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+
+first thing to do is to is to iterate though the array and get the sum of the elements 
+in the array
+after getting the elements in the array compare them to the target if they are equal 
+
 */
 
 /*
